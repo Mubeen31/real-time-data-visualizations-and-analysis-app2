@@ -7,6 +7,7 @@ from datetime import datetime
 from app import app
 from tabContent.content_tab_one import layout_tab_one
 from tabContent.content_tab_two import layout_tab_two
+import dash_bootstrap_components as dbc
 server = app.server
 
 tab_style = {
@@ -33,7 +34,7 @@ selected_tab_style = {
 app.layout = html.Div([
 
     dcc.Interval(id='update_value',
-                 interval=1 * 16000,
+                 interval=1 * 17000,
                  n_intervals=0),
 
     html.Div([
@@ -51,7 +52,7 @@ app.layout = html.Div([
                 html.Div('Walsall, England', className='location_name')
             ], className='location_row'),
 
-            html.Div(id='data_update_time')
+            dbc.Spinner(html.Div(id='data_update_time'))
 
         ], className='title_background twelve columns')
     ], className='row'),
