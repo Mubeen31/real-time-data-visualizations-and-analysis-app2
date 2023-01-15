@@ -5,3 +5,4 @@ metaTags = [
 
 app = dash.Dash(__name__, meta_tags=metaTags,
                 suppress_callback_exceptions=True)
+server = app.server

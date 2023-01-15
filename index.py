@@ -7,6 +7,7 @@ from datetime import datetime
 from app import app
 from tabContent.content_tab_one import layout_tab_one
 from tabContent.content_tab_two import layout_tab_two
+server = app.server
 
 tab_style = {
     'height': '35px',
