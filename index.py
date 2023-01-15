@@ -34,7 +34,7 @@ selected_tab_style = {
 app.layout = html.Div([
 
     dcc.Interval(id='update_value',
-                 interval=1 * 17000,
+                 interval=1 * 16000,
                  n_intervals=0),
 
     html.Div([
