@@ -29,6 +29,8 @@ body {
 .title_image_row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   column-gap: 3px;
 }
@@ -46,6 +48,8 @@ body {
 .date_time_row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   column-gap: 5px;
 }
 
