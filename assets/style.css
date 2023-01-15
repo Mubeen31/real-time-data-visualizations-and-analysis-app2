@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e6e6e6;
+  margin: 0;
+}
+
+.title_background {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 5px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.image {
+  height: 25px;
+}
+
+.title_text {
+  font-weight: bold;
+  font-size: 17;
+}
+
+.title_image_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 3px;
+}
+
+.location_name {
+  color: #737373;
+}
+
+.location_row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+
+.date_time_row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+
+.tabs_container {
+  display: flex;
+  flex-direction: row;
+  white-space: pre;
+  background-color: #ffffff;
+  margin-top: 40px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.display_center_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.tab_content_row  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.tab_page {
+  background-color: #ffffff;
+}
