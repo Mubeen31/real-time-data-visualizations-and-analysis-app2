@@ -27,7 +27,7 @@ layout_tab_one = html.Div([
                                   ),
                 daq.BooleanSwitch(id='last_values',
                                   on=True,
-                                  color="#9B51E0",
+                                  color="#FF5E5E",
                                   label='Select last values',
                                   labelPosition='top'
                                   )
