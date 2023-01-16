@@ -81,3 +81,11 @@ body {
 .tab_page {
   background-color: #ffffff;
 }
+
+.button_row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
