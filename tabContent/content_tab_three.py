@@ -76,7 +76,7 @@ def update_value(n_intervals):
         )],
         'layout': go.Layout(
             margin=dict(t=50, l=50, r=40),
-            hovermode='closest',
+            hovermode='x',
             plot_bgcolor='rgba(255, 255, 255, 0)',
             paper_bgcolor='rgba(255, 255, 255, 0)',
             title={'text': '<b>Comparison two days Temperature (°C)',
