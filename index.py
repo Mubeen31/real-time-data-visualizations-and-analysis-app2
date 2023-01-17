@@ -7,11 +7,15 @@ from datetime import datetime
 from app import app
 from tabContent.content_tab_one import layout_tab_one
 from tabContent.content_tab_two import layout_tab_two
+from tabContent.content_tab_three import layout_tab_three
+from tabContent.content_tab_four import layout_tab_four
 import dash_bootstrap_components as dbc
+
 server = app.server
 
 tab_style = {
     'height': '35px',
+    'width': 'auto',
     'padding': '7.5px',
     'border-top': 'none',
     'border-bottom': 'none',
@@ -22,6 +26,7 @@ tab_style = {
 
 selected_tab_style = {
     'height': '35px',
+    'width': 'auto',
     'padding': '7.5px',
     'border-top': 'none',
     'border-bottom': '2px solid blue',
@@ -67,6 +72,14 @@ app.layout = html.Div([
                 dcc.Tab(label='Humidity',
                         value='tab_content_two',
                         style=tab_style,
+                        selected_style=selected_tab_style),
+                dcc.Tab(label='Hourly',
+                        value='tab_content_three',
+                        style=tab_style,
+                        selected_style=selected_tab_style),
+                dcc.Tab(label='Light Intensity',
+                        value='tab_content_four',
+                        style=tab_style,
                         selected_style=selected_tab_style)
             ], style={'display': 'flex', 'flex-direction': 'row'})
         ], className='tabs_container eight columns')
@@ -84,6 +97,10 @@ def update_content(tabs):
         return layout_tab_one
     elif tabs == 'tab_content_two':
         return layout_tab_two
+    elif tabs == 'tab_content_three':
+        return layout_tab_three
+    elif tabs == 'tab_content_four':
+        return layout_tab_four
 
 
 @app.callback(Output('data_update_time', 'children'),
