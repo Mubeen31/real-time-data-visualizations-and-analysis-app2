@@ -23,7 +23,7 @@ layout_tab_four = html.Div([
 @app.callback(Output('line_chart4', 'figure'),
               [Input('update_value4', 'n_intervals')])
 def update_value(n_intervals):
-    url = 'https://api.thingspeak.com/channels/2007583/fields/3.csv?days=2'
+    url = 'https://api.thingspeak.com/channels/2007583/fields/3.csv?days=1'
     df = pd.read_csv(url)
     df['created_at'] = pd.to_datetime(df['created_at'])
     df['created_at'] = pd.to_datetime(df['created_at']).dt.strftime('%Y-%m-%d %H:%M:%S')
